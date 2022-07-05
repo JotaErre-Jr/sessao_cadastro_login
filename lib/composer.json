@@ -1,0 +1,19 @@
+{
+    "name": "login/jotaerre",
+    "description": "Cadastro e login em PHP",
+    "autoload": {
+        "psr-4": {
+            "Login\\Jotaerre\\": "src/",
+            "Classes\\":"../classes",
+            "Models\\":"../models",
+            "Traits\\":"../traits"
+        }
+    },
+    "authors": [
+        {
+            "name": "jose junior",
+            "email": "jose.junior@prodepa.pa.org.br"
+        }
+    ],
+    "require": {}
+}

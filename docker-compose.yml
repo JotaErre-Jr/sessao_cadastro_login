@@ -1,0 +1,19 @@
+php:
+  image: php:7.4-apache
+  container_name: php-container
+  ports:
+    - "8040:80"
+    - "500:443"
+  volumes:
+    - /var/www/html/sessao_php:/var/www/html 
+  links:
+    - db
+db:
+  image: mysql:latest
+  container_name: mysql-container
+  ports:
+    - "3333:3306"
+  volumes:
+    - /var/lib/mysql
+  environment:
+    - MYSQL_ROOT_PASSWORD=root      
